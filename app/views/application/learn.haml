@@ -1,0 +1,50 @@
+%h1 Learn Dev Tools like a Pro!
+
+%h2 What are Dev Tools?
+
+%p Browser Developer Tools (dev tools for short) are a way to inspect and debug your front-end code right in the browser. Many browsers offer these tools for free, like Google Chrome, Firefox and Safari. (These exercises use Google Chrome's dev tools, but they're all similar.)
+
+%h2 How do I open Dev Tools?
+
+%p Open your Google Chrome web browser to any web page. You can use the shortcut option + command + i to open the dev tools pane, or in the top navigation go to View > Developer > Developer Tools.
+
+%h2 Great! Now what am I looking at?
+
+%p Your dev tools panel could show up at the bottom of your browser window, off to the side, or in a seperate window. You can switch this orientation by clicking the triple dots icon in the top right of the dev tools panel, then selecting one of the four Dock Side options. I personally like Dock to Right the best, but it may depend on your specific task.
+
+%p Now that you have the panel where you want it, expand the panel so you can see each tab at the top. You should see Elements, Console, Sources, Network, Performance, and a few other tabs. These exercises will focus on the Elements tab.
+
+%h2 Elements
+
+%p The Elements tab lets you play around with two things: HTML and CSS. HTML (otherwise known as Markup) is the code that makes up the content of a webpage, like text, images, and videos. CSS is the code that styles this content. It's what makes the text blue, or Comic Sans, or what gives the image rounded corners. It can set background colors, and even turn images themselves into the background.
+
+= image_tag 'elements.png'
+
+%p When HTML is sent to our browser, it's a single string of text. The browser parses this string into an interactive object called the Document Object Model (DOM for short). This allows us to add content, remove content, or change the order of content right on the webpage!
+
+%h2 "Inspect" and Element
+
+%p Right-click on any item on any webpage (or Control + click), then select "inspect".
+
+= image_tag 'inspect.png'
+
+%p This will open the Dev Tools panel, on the Elements tab, with this element highlighted in the DOM. The Styles tab below will show the styles acting on that element.
+
+%h2 Styles
+
+%p The panel where CSS is changed has its own list of tabs. Most CSS work happens in the "Styles" tab.
+
+%p Here, you can add, remove, or change existing styles on your selected Element. You can also change the style on more global elements, like paragraphs (p) or headers (h1, h2, h3).
+
+= image_tag 'styles.png'
+
+%p It's important to know that any changes made in dev tools are wiped away with a page refresh, so if you make changes you want to keep, copy your code to another file.
+
+%h2 Learn More!
+
+%p There are tons of great resources out there for learning how to use dev tools and build websites faster and better! Here are a few of my favorites:
+
+%ul
+  %li= link_to "Learn to Code HTML and CSS with Shaye Howe", "https://learn.shayhowe.com/html-css/", target: "_blank"
+  %li= link_to "A List of Chrome Dev Tools Tips and Tricks", "https://flaviocopes.com/chrome-devtools-tips/", target: "_blank"
+  %li= link_to "Discover Chrome Dev Tools Course on Codeschool", "https://www.codeschool.com/courses/discover-devtools", target: "_blank"

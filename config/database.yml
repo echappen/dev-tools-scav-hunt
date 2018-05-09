@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: 'learn_dev_tools_development' #database name
+  username: 'postgres' #postgres username
+  password: 'postgres' #postgres password
+  host: localhost
+  port: 5432
