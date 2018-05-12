@@ -1,4 +1,4 @@
 %h1 Dev Tools Scav Hunt
 %nav
-  = link_to "Hunt", hunt_path
-  = link_to "Learn", learn_path
+  = link_to "Hunt", hunt_path, class: "#{'active' if current_page?(hunt_path)}"
+  = link_to "Learn", learn_path, class: "#{'active' if current_page?(learn_path)}"

@@ -21,7 +21,7 @@ body {
 
 /* Typography */
 
-h1, h2, h3, p {
+h1, h2, h3, p, li, a {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
 }
 
@@ -69,15 +69,61 @@ img {
 
 nav {
   padding: 6px 0;
-  border-bottom: 4px solid #ddd;
-  border-top: 4px solid #ddd;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
+nav::after,
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
 nav a,
 nav a:visited,
 nav a:active {
-  padding: 0 10px;
+  display: inline-block;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  background-color: transparent;
+  width: 50%;
+  text-align: center;
+  color: #6aa1a8;
+  border-bottom: 4px solid #6aa1a8;
+  font-size: 24px;
+}
+
+nav a.active {
+  color: #e6e6e6;
+  background-color: #6aa1a8;
+}
+
+/* Home page */
+
+.home-container {
+  padding-top: 200px;
+}
+
+.home-container h1 {
+  margin-bottom: 50px;
+}
+
+.home__link {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.home__link i {
+  display: block;
+  color: #607d8b;
+  font-size: 46px;
+  padding-bottom: 15px;
+}
+
+.home__link a {
+
 }

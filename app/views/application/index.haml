@@ -1,5 +1,14 @@
-%h1 Dev Tools Scav Hunt
+.home-container
+  %h1 Welcome to Dev Tools Scav Hunt!
 
-= link_to "Know a thing or two? Start the hunt!", hunt_path
+  .home__links.clearfix
 
-= link_to "New to Dev Tools? Learn about it first!", learn_path
+    .home__link
+      = link_to hunt_path do
+        %i.far.fa-list-alt
+        Know a thing or two? Start the hunt!
+
+    .home__link
+      = link_to learn_path do
+        %i.fas.fa-chalkboard-teacher
+        New to Dev Tools? Learn about it first!
