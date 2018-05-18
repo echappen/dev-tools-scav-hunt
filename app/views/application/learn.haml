@@ -2,7 +2,7 @@
 
 %h2 What are Dev Tools?
 
-= image_tag 'overview.png', style: 'width:650px;box-shadow: none;'
+= image_tag 'overview.png', style: 'width:650px;box-shadow: none;', alt: 'screenshot of Chrome Developer Tools console docked to the right of the browser window with highlighted DOM element'
 
 %p Browser Developer Tools (Dev Tools for short) are a way to inspect and debug your front-end code right in the browser. Many browsers offer these tools for free, like Google Chrome, Firefox and Safari. (These exercises use Google Chrome's dev tools, but they're all similar.)
 
@@ -18,7 +18,7 @@
 
 %p Your Dev Tools panel could show up at the bottom of your browser window, off to the side, or in a seperate window. You can switch this orientation by clicking the triple dots icon in the top right of the Dev Tools panel, then selecting one of the four "Dock Side" options. I personally like "Dock to Right" the best, but it may depend on your specific task.
 
-= image_tag 'dock_side.png'
+= image_tag 'dock_side.png', alt: 'detail screenshot of Chrome Developer Tool buttons that control docking orientation'
 
 %p Now that you have the panel where you want it, expand the panel so you can see each tab at the top. You should see Elements, Console, Sources, Network, Performance, and a few other tabs. These exercises will focus on the Elements tab.
 
@@ -26,7 +26,7 @@
 
 %p The Elements tab lets you play around with two things: HTML and CSS. HTML (otherwise known as Markup) is the code that makes up the content of a webpage, like text, images, and videos. CSS is the code that styles this content. It's what makes the text blue, or Comic Sans, or what gives the image rounded corners. It can set background colors, and even turn images themselves into the background.
 
-= image_tag 'elements.png'
+= image_tag 'elements.png', alt: 'detail screenshot of Chrome Developer Tools Elements panel'
 
 %p When HTML is sent to our browser, it's a single string of text. The browser parses this string into an interactive object called the Document Object Model (DOM for short). This allows us to add content, remove content, or change the order of content right on the webpage!
 
@@ -37,7 +37,7 @@
   %strong control + click
   ), then select "inspect".
 
-= image_tag 'inspect.png'
+= image_tag 'inspect.png', alt: 'detail screenshot of inspecting an element in Chrome Developer Tools'
 
 %p This will open the Dev Tools panel, on the Elements tab, with this element highlighted in the DOM. The Styles tab below will show the styles acting on that element.
 
@@ -47,7 +47,7 @@
 
 %p Here, you can add, remove, or change existing styles on your selected Element. You can also change the style on more global elements, like paragraphs (p) or headers (h1, h2, h3).
 
-= image_tag 'styles.png'
+= image_tag 'styles.png', alt: 'detail screenshot of Chrome Developer Tools Styles tab within the Elements panel'
 
 %p It's important to know that any changes made in Dev Tools are wiped away with a page refresh, so if you make changes you want to keep, copy your code to another file.
 
